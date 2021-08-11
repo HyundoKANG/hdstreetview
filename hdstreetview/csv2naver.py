@@ -24,8 +24,10 @@ def csv2naver(csv, path, column, year=None):
    
     col_lat   = column[0]
     col_lng   = column[1]
-    year1     = year[0]
-    year2     = year[1]
+    
+    if year is not None:
+        year1     = year[0]
+        year2     = year[1]
     
     coordlist = sv.roadxy(csv, col_lat, col_lng)
     
