@@ -16,7 +16,12 @@ setup(
     packages=['hdstreetview'],
     zip_safe=False,
     install_requires=[
-        'requests'
+	    'requests',
+	    'PIL',
+	    'shutil',
+	    'pandas',
+	    'itertools',
+	    'nose'
     ],
     test_suite='nose.collector',
     tests_require=['nose'],
