@@ -13,6 +13,7 @@ from tqdm import tqdm
 from random import random
 import pandas as pd
 import time
+import os
 
 def csv2naver(csv, path, column, year=None):
 
