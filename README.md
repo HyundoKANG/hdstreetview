@@ -25,7 +25,7 @@ from hdstreetview import csv2naver
 ```
 
 2. csv2naver 모듈 내의 csv2naver 함수를 사용한다.
-```
+```python
 # VARIABLES
 csv2naver.csv2naver(csv, path, column, year=None)
 
