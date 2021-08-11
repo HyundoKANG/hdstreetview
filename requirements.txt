@@ -1,5 +1,2 @@
 requests
-pandas
-PIL
-shutil
-itertools
+nose
