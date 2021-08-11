@@ -30,7 +30,7 @@ def csv2naver(csv, path, column, year=None):
     
     panoids   = []
  
-
+    print("CSV파일의 좌표로부터 최근접 파노라마 ID를 조회합니다")
     for lat, lng in tqdm(coordlist):
         
         panoid = sv.nearby(lat, lng)
@@ -38,6 +38,7 @@ def csv2naver(csv, path, column, year=None):
         time.sleep(random()/10)        
 
     if year is not None:
+        print("설정한 연도에 해당하는 파노라마가 존재하는지 확인합니다")
         for i, panoid in tqdm(enumerate(panoids)):
 
             if i == 0:
@@ -55,17 +56,19 @@ def csv2naver(csv, path, column, year=None):
 
     tiles = sv.tiles()        
 
-    
+    print("파노라마 ID로부터 2x2x3개의 타일을 다운로드합니다")
     for panoid in tqdm(panoids):
 
         tiles.download(panoid, path)
 
+    print("타일을 이어붙여서 하나의 사진으로 저장합니다")
     for panoid in tqdm(panoids):
         if year is not None:
             tiles.stitch(panoid, path, final, timeline=pair2)
         else:
             tiles.stitch(panoid, path, final)
 
+    print("타일을 삭제합니다")
     for panoid in tqdm(panoids):
 
         try:
