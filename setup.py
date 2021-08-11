@@ -11,7 +11,7 @@ setup(
     long_description=readme(),
     url='https://github.com/arawatki97/hdstreetview',
     author='Hyundo_Kang',
-    author_email='me@dradrian.com',
+    author_email='arawatki97@gmail.com',
     license='MIT',
     packages=['hdstreetview'],
     zip_safe=False,
