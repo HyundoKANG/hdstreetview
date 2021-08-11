@@ -1,20 +1,24 @@
 from setuptools import setup
 
+def readme():
+    with open('readme.md') as f:
+        return f.read()
+
 setup(
-  name='hdstreetview',
-  version='0.1',
-  description='Get pictures and timelines of panoramas from Naver Map.'
-  url='https://github.com/arawatki97/hdstreetview.git',
-  author='Hyundo_Kang',
-  author_email='arawatki97@gmail.com',
-  license='Hyundo_Kang',
-  packages=['hdstreetview'],
-  zip_safe=False,
-  install_requires=[
-    'requests',
-    'pandas',
-    'PIL',
-    'shutil'
-    'itertools'
-  ]
+    name='hdstreetview',
+    version='0.1',
+    description='Get pictures and timelines of panoramas from Naver Map.',
+    long_description=readme(),
+    url='https://github.com/arawatki97/hdstreetview',
+    author='Hyundo_Kang',
+    author_email='me@dradrian.com',
+    license='MIT',
+    packages=['hdstreetview'],
+    zip_safe=False,
+    install_requires=[
+        'requests'
+    ],
+    test_suite='nose.collector',
+    tests_require=['nose'],
 )
+	
