@@ -1,30 +1,30 @@
-# hdstreetview
-
-## 패키지 설치
+# hdstreetview   
+   
+## 패키지 설치   
 ```
 pip install git+https://github.com/arawatki97/hdstreetview
 ```
-
-## 패키지 업데이트
+   
+## 패키지 업데이트   
 ```
 pip install --upgrade git+https://github.com/arawatki97/hdstreetview
 ```
-
-## 패키지 설명서
-0.1버전 기준
-
-구조
-hdstreetview
-  ├─ csv2naver
-  └─ svnaver
-
-사용방법
-1. hdstreetview 패키지에서 csv2naver 모듈을 불러온다.
+   
+## 패키지 설명서   
+0.1버전 기준   
+   
+구조   
+hdstreetview   
+  ├─ csv2naver   
+  └─ svnaver   
+   
+사용방법   
+1. hdstreetview 패키지에서 csv2naver 모듈을 불러온다.   
 ```python
 from hdstreetview import csv2naver
 ```
-
-2. csv2naver 모듈 내의 csv2naver 함수를 사용한다.
+   
+2. csv2naver 모듈 내의 csv2naver 함수를 사용한다.   
 ```python
 # VARIABLES
 csv2naver.csv2naver(csv, path, column, year=None)
@@ -48,5 +48,5 @@ path = "../result/"
 column = ["ycoord","xcoord"]
 csv2naver.csv2naver(csv, path, column)
 ```
-
+   
 
