@@ -17,7 +17,7 @@ setup(
     zip_safe=False,
     install_requires=[
 	    'requests',
-	    'PIL',
+	    'pillow',
 	    'shutil',
 	    'pandas',
 	    'itertools',
