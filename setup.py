@@ -8,7 +8,7 @@ setup(
     name='hdstreetview',
     version='0.1',
     description='Get pictures and timelines of panoramas from Naver Map.',
-    long_description=readme(),
+    long_description="hi",
     url='https://github.com/arawatki97/hdstreetview',
     author='Hyundo_Kang',
     author_email='arawatki97@gmail.com',
