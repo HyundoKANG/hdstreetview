@@ -1,7 +1,7 @@
 from setuptools import setup
 
 with open('requirements.txt') as f:
-requirements = f.read().splitlines()
+	requirements = f.read().splitlines()
 
 def readme():
     with open('readme.md') as f:
