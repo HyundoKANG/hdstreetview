@@ -5,11 +5,6 @@ with open('requirements.txt') as f:
 
 with open("README.md", "r") as fh:
 	long_description = fh.read()
-	
-	
-def readme():
-    with open('readme.md') as f:
-        return f.read()
 
 setup(
     name='hdstreetview',
