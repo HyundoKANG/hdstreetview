@@ -15,14 +15,7 @@ setup(
     license='MIT',
     packages=['hdstreetview'],
     zip_safe=False,
-    install_requires=[
-	    'requests',
-	    'pillow',
-	    'shutil',
-	    'pandas',
-	    'itertools',
-	    'nose'
-    ],
+    install_requires=requirements,
     test_suite='nose.collector',
     tests_require=['nose'],
 )
