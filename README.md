@@ -1,26 +1,26 @@
 # hdstreetview   
    
-## 패키지 설치   
+## Package Install  
 ```
 pip install git+https://github.com/arawatki97/hdstreetview
 ```
    
-## 패키지 업데이트   
+## Package Update   
 ```
 pip install --upgrade git+https://github.com/arawatki97/hdstreetview
 ```
    
-## 패키지 설명서   
+## Manual  
 0.1버전 기준   
    
-### 구조   
+### Structure   
 ```
 hdstreetview   
   ├─ csv2naver   
   └─ svnaver   
 ```
    
-### csv2naver 사용방법   
+### How to Use csv2naver   
 1. hdstreetview 패키지에서 csv2naver 모듈을 불러온다.   
 ```python
 from hdstreetview import csv2naver
@@ -51,7 +51,7 @@ column = ["ycoord","xcoord"]
 csv2naver.csv2naver(csv, path, column)
 ```
 
-## 샘플 파일   
+## Sample   
 sample 폴더의 test.csv 파일을 사용하여 테스트해볼 수 있다.   
 위도 컬럼명은 "ycoord", 경도 컬럼명은 "xcoord"로 설정되어 있다.   
    
