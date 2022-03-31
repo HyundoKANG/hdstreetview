@@ -2,12 +2,12 @@
    
 ## Package Install  
 ```
-pip install git+https://github.com/arawatki97/hdstreetview
+pip install git+https://github.com/HyundoKANG/hdstreetview
 ```
    
 ## Package Update   
 ```
-pip install --upgrade git+https://github.com/arawatki97/hdstreetview
+pip install --upgrade git+https://github.com/HyundoKANG/hdstreetview
 ```
    
 ## Manual  
