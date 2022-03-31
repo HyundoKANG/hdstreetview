@@ -55,4 +55,9 @@ csv2naver.csv2naver(csv, path, column)
 sample 폴더의 test.csv 파일을 사용하여 테스트해볼 수 있다.   
 위도 컬럼명은 "ycoord", 경도 컬럼명은 "xcoord"로 설정되어 있다.   
    
+## Thanks to
+robolyst님의 코드 구조를 참고해가며 응용하였습니다.
+[robolyst/streetview](https://github.com/robolyst/streetview)
+
+
 
